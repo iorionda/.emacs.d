@@ -6,4 +6,5 @@
 !/inits
 !/site-lisp
 !/etc
+!/plugins
 !/init.el
