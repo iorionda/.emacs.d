@@ -5,3 +5,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'auto-highlight-symbol)
 (auto-highlight-symbol-mode t)
+(global-auto-highlight-symbol-mode t)
+
+;; ハイライトするまでの時間を指定
+(ahs-set-idle-interval 0.5)
