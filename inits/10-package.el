@@ -38,12 +38,14 @@
     helm
     helm-c-yasnippet
     helm-projectile
+    helm-migemo
     highlight-indentation
     ido
     inf-ruby
     js2-mode
     magit
     markdown-mode
+    migemo
     mode-compile
     motion-mode
     multiple-cursors
