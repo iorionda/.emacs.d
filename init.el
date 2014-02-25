@@ -134,7 +134,7 @@
 (defun load-auto-complete()
   (require 'auto-complete-config)
   (ac-config-default)
-  (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20130209.651/dict")
+  (add-to-list 'ac-dictionary-directories "~/.emacs.d/dict")
 
   (setq ac-use-menu-map t)
   (define-key ac-menu-map "\C-n" ac-next)
