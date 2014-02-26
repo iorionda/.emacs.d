@@ -379,4 +379,4 @@
 (load-file "~/.emacs.d/site-lisp/hlline-face.el")
 (load-file "~/.emacs.d/site-lisp/helm-git-project.el")
 
-(load-theme 'zenburn)
+(load-theme 'zenburn t)
