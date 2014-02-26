@@ -32,21 +32,6 @@
        load-path))
 
 ;; [TODO] - 整理する
-;;  google-translate
-(require 'google-translate)
-(global-set-key (kbd "C-x t") 'google-translate-at-point)
-;; 翻訳のデフォルト値を設定(en -> ja)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("a3d519ee30c0aa4b45a277ae41c4fa1ae80e52f04098a2654979b1ab859ab0bf" "9370aeac615012366188359cb05011aea721c73e1cb194798bc18576025cabeb" default)))
- '(google-translate-default-source-language "en")
- '(google-translate-default-target-language "ja")
- '(rspec-use-rake-when-possible nil)
- '(yas-trigger-key "TAB"))
-
 ;;; c-mode
 (setq-default c-basic-offset 4     ;;基本インデント量4
               tab-width 4          ;;タブ幅4
