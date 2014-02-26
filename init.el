@@ -1,7 +1,7 @@
 ;; -*- Mode: Emacs-Lisp ; Coding: utf-8 -*-
 (eval-when-compile (require 'cl))
 (unless (fboundp 'cl-flet)
-  (define 'cl-flet 'flet))
+  (defalias 'cl-flet 'flet))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; ~/.emacs.d/site-lisp/ 以下を全て読み込み
