@@ -19,7 +19,6 @@
   (set (make-local-variable 'coffee-tab-width) 2))
 
 (add-hook 'coffee-mode-hook
-          (load-auto-complete)
           '(lambda() (coffee-custom)))
 
 (eval-after-load "coffee-mode"
@@ -27,9 +26,11 @@
      (define-key coffee-mode-map [(meta r)] 'coffee-compile-buffer)
      (define-key coffee-mode-map (kbd "C-j") 'coffee-newline-and-indent)))
 
-(add-to-list 'load-path "~/.emacs.d/elisp/el-get/ac-coffee/")
-(require 'ac-coffee)
+;; coffee-modeでACを使えるようにする
 (add-to-list 'ac-modes 'coffee-mode)
-(defun ac-coffee-mode-setup ()
-    (setq-default ac-sources my-ac-sources))
-(add-hook 'coffee-mode-hook 'ac-coffee-mode-setup)
+;; coffee-modeで、追加したjs2-modeのdict(辞書)で補完するようにする
+;; wget https://raw.github.com/sandai/dotfiles/master/.emacs.d/ac-dict/js2-mode
+(add-hook 'coffee-mode-hook
+          '(lambda ()
+             (add-to-list 'ac-dictionary-files "~/.emacs.d/elisp/el-get/auto-complete/dict/js2-mode")
+             ))
