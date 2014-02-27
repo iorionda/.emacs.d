@@ -25,10 +25,11 @@
       (append
        (list
     (expand-file-name "~/.emacs.d")
-    (expand-file-name "~/.emacs.d/color-theme")
-    (expand-file-name "~/.emacs.d/packages")
-    (expand-file-name "~/.emacs.d/plugins")
-    (expand-file-name "~/.emacs.d/elisp"))
+    (expand-file-name "~/.emacs.d/color-theme/")
+    (expand-file-name "~/.emacs.d/packages/")
+    (expand-file-name "~/.emacs.d/plugins/")
+    (expand-file-name "~/.emacs.d/elisp/")
+    )
        load-path))
 
 ;; [TODO] - 整理する
