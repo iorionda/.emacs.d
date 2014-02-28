@@ -46,6 +46,7 @@
     magit
     markdown-mode
     migemo
+    mo-git-blame
     mode-compile
     motion-mode
     multiple-cursors
