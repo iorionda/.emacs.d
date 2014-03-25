@@ -26,6 +26,7 @@
     elscreen
     exec-path-from-shell
     flycheck
+    flycheck-tip
     flymake
     flymake-coffee
     flymake-ruby
