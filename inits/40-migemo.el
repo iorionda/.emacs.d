@@ -14,13 +14,13 @@
   (migemo-init))
 
 ;; emacs 起動時は英数モードから始める
-(add-hook 'after-init-hook 'mac-change-language-to-us)
+;; (add-hook 'after-init-hook 'mac-change-language-to-us)
 
 ;; minibuffer 内は英数モードにする
-(add-hook 'minibuffer-setup-hook 'mac-change-language-to-us)
+;; (add-hook 'minibuffer-setup-hook 'mac-change-language-to-us)
 
 ;; [migemo]isearch のとき IME を英数モードにする
-(add-hook 'isearch-mode-hook 'mac-change-language-to-us)
+;; (add-hook 'isearch-mode-hook 'mac-change-language-to-us)
 
 (require 'helm-migemo)
 (setq helm-use-migemo t)
