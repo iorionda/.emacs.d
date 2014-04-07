@@ -18,12 +18,19 @@
                :description "open github from here"
                :pkgname "akfish/ac-coffee"
                :branch "master")
-        ))
+        (:name emoji-cheat-sheet
+               :type github
+               :description "usable emoji"
+               :pkgname "ShingoFukuyama/emacs-emoji-cheat-sheet"
+               :branch "master")
+        )
+      )
 
 ;; Packages to install from el-get
 (defvar my/el-get-packages
   '(
     ac-coffee
+    emoji-cheat-sheet
     )
   "A list of packages to install from el-get at launch.")
 (el-get 'sync my/el-get-packages)
