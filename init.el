@@ -88,6 +88,7 @@
 (add-to-list 'auto-mode-alist '("\\.thor$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("ruby$" . ruby-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
 
 (add-hook 'ruby-mode-hook '(lambda ()
@@ -381,3 +382,4 @@
 (load-file "~/.emacs.d/site-lisp/helm-git-project.el")
 
 (load-theme 'zenburn t)
+(put 'dired-find-alternate-file 'disabled nil)
