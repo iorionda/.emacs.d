@@ -1,0 +1,17 @@
+(add-to-list 'load-path "~/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rcodetools-0.8.5.0/")
+(require 'rcodetools)
+(setq rct-find-tag-if-available nil)
+(defun ruby-mode-hook-rcodetools ()
+  (define-key ruby-mode-map (kbd "<C-tab>") 'rct-complete-symbol)
+  (define-key ruby-mode-map (kbd "<C-return>") 'xmp))
+
+;(global-set-key (kbd "<C-return>") 'xmp)
+
+(add-hook 'ruby-mode-hook 'ruby-mode-hook-rcodetools)
+(defun make-ruby-scratch-buffer ()
+  (with-current-buffer (get-buffer-create "*ruby scratch*")
+    (ruby-mode)
+    (current-buffer)))
+(defun ruby-scratch ()
+  (interactive)
+  (pop-to-buffer (make-ruby-scratch-buffer)))
